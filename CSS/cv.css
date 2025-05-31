@@ -4,26 +4,34 @@
   font-family: "Fraunces", serif;
 }
 
-body {
-  background-color: #1A2C61;
+main {
+  height: 135vh;
+  min-height: 135vh;
+  background-color: #19305D;
   color: #f0f8ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
 }
 
-.fila {
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.espacio {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 90vh;
   margin: 40px;
 }
 
-section div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
+.espacio div {
+  padding: 30px;
 }
+
+section {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
